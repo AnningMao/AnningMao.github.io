@@ -1,5 +1,5 @@
 title: Tourist Website-1.1Data Model and Database Design
-tags: Tourist Website/.Net core/API/MVC/
+tags: Tourist Website/.Net core/API/MVC
 author: Anning Mao
 
 # Data Model and Database Design
