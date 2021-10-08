@@ -1,6 +1,6 @@
 ---
-title: Tourist website-1.1 Data model and database design
-tags: .Net core/API/MVC
+title: Tourist website-1.1 Data model and Database design
+tags: .Netcore/API/MVC
 author: Anning Mao
 ---
 
@@ -58,5 +58,48 @@ One `User` can have more than one ` Character` and one ` Character` include many
 
 ![1.5](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/Database%20design/1.5.png)
 
-All the Logic concept is clear and now we can build up our physical database.
+In the code implementation, the data model is that a class contains multiple attributes, these attributes can be mapped to the database, the programmer can manipulate the data in the form of objects
+
+From a data point of view, the role of the data model is to obtain data, update data, transfer data, and save data. From the perspective of system responsibilities, the data model belongs to the business layer.
+
+There is no strict definition of the model in the industry. Everyone uses the data model based on experience. The data model can be a simple POCO type or a complex rich domain model.
+
+
+
+## How to get data from the database
+
+You can JDBC, Ado.Net or ORM, but this project will use a mainstream data persistence model, repository. It  will help us use the objectified data without worrying about how the data is stored. Even the data storage format can be ignored. As long as we use the data mapping mechanism of the repository, whether you are using mysql, Oraclesql or even nosql, it can run perfectly.
+
+To use the repository, we must first create some interfaces. In these interfaces, we will highly abstract the data persistence business. The specific steps of data acquisition, modification and saving will be hidden and encapsulated, and the encapsulated repository will provide the simplest API to execute Data manipulation
+
+![1.6](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/Database%20design/1.6.png)
+
+
+
+## Benefits of using Data Models and Repository
+
+- The business logic and the data model are precisely coupled to reduce layering and reduce the number of codes
+
+
+- Completely divest the database business, programmers can focus more on the business logic
+
+
+- Object-oriented programming, data is transformed into objects, more in line with human thinking
+
+eg. 
+
+to get the Zip code of some user with sql
+
+```sql
+SELECT ZipCode
+FROM User
+LEFT JOIN Address on user.Id= Address.UserId
+WHERE User.Id=$id
+```
+
+same task with object oriented
+
+``` 
+User.Address.ZipCode
+```
 
