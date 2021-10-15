@@ -1,10 +1,10 @@
 ---
-title: Tourist website-1.2 Connect to A Mock Repository
+title: Connect to A Mock Repository
 tags: .Netcore/API/MVC
 author: Anning Mao
 ---
 
-# Connect to A Mock Repository
+
 
 For .Net Core's MVC architecture, the data model is in the model folder
 

@@ -1,10 +1,10 @@
 ---
-title: Tourist website-1.1 Data model and Database design
+title: Data Model and Database Design
 tags: .Netcore/API/MVC
 author: Anning Mao
 ---
 
-# Data Model and Database Design
+
 
 What is the first thing that needs to be done for a new project? Your answer may be "build a database". This is sufficient for small projects, but not enough for large projects.
 
