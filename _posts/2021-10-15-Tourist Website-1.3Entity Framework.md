@@ -21,9 +21,9 @@ Official definition: "Entity Framework is an object-relational mapper (O/RM) tha
 5. **Save** EF calls the SaveChanges () method, according to the changes in the entity, execute INSERT , UPDATE and DELETE commands on the database . EF also provides an asynchronous SaveChangesAsync () method.
 6. **Concurrent** By default, data is extracted from the start from the database, EF using optimistic lock to avoid changes we make is covered by other users.
 7. **Transaction** EF automatically performs transaction management when querying or saving data. It also provides options for custom transaction management.
-8. **Cache **EF uses the level 1 cache. Therefore, repeated queries will return data from the cache instead of accessing the database.
+8. **Cache**EF uses the level 1 cache. Therefore, repeated queries will return data from the cache instead of accessing the database.
 9. **Configure** EF allows us to use annotations configuration properties EF model, you can also use the Fluent API to override the default convention.
-10. **Migration ** EF provides a set of migration command, We can execute these commands in the NuGet Package Manager console or command line interface to create or manage the underlying database.
+10. **Migration** EF provides a set of migration command, We can execute these commands in the NuGet Package Manager console or command line interface to create or manage the underlying database.
 
 
 
