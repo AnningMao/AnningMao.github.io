@@ -4,10 +4,6 @@ tags: .Netcore/API/MVC
 author: Anning Mao
 ---
 
-
-
-[TOC]
-
 ## 1. Visual Studio's own database
 
 If you are using a Windows operating system, then your visual studio comes with SQL Express service. 
