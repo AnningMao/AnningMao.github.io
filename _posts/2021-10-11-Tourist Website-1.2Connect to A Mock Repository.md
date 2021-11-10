@@ -160,4 +160,5 @@ then run your project and Enter ` localhost:xxxx/api/TouristRoutes` in the brows
 
 If browser shows the mock data then it succeeded
 
-![1.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/Mock%20repository/1.1.png)
+![1.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.2%20Mock%20repository/1.1.png)
+

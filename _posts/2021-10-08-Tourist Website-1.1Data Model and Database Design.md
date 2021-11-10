@@ -10,15 +10,13 @@ What is the first thing that needs to be done for a new project? Your answer may
 
 A project should start from the business:
 
-![1.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/Database%20design/1.1.png)
-
-
+![1.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.1%20Database%20design/1.1.png)
 
 ## Summarize Businesses
 
 The businesses included in our `Tourist Website` are as follows
 
-![1.2](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/Database%20design/1.2.png)
+![1.2](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.1%20Database%20design/1.2.png)
 
 The businesses can be divided into 3 Module and this module-based design model is called Domain Driven Design(DDD)
 
@@ -38,7 +36,7 @@ For a chemist, the chemical composition of an apple is the most suitable modelin
 
 Back to my project. we should build the data model based on our three businesses module summarized in the last step:
 
- ![1.3](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/Database%20design/1.3.png)
+ ![1.3](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.1%20Database%20design/1.3.png)
 
 
 
@@ -46,7 +44,7 @@ For an `Use` of a website, we don't care about his/her hair color or appearance,
 
 ## Entity-Relationship 
 
- ![1.4](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/Database%20design/1.4.png)
+ ![1.4](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.1%20Database%20design/1.4.png)
 
 One `Route` should have more than one display `picture` so the relationship is `1-n`
 
@@ -56,7 +54,7 @@ One `User` can have more than one ` Character` and one ` Character` include many
 
 ## DataBase
 
-![1.5](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/Database%20design/1.5.png)
+![1.5](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.1%20Database%20design/1.5.png)
 
 In the code implementation, the data model is that a class contains multiple attributes, these attributes can be mapped to the database, the programmer can manipulate the data in the form of objects
 
@@ -72,7 +70,7 @@ You can JDBC, Ado.Net or ORM, but this project will use a mainstream data persis
 
 To use the repository, we must first create some interfaces. In these interfaces, we will highly abstract the data persistence business. The specific steps of data acquisition, modification and saving will be hidden and encapsulated, and the encapsulated repository will provide the simplest API to execute Data manipulation
 
-![1.6](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/Database%20design/1.6.png)
+![1.6](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.1%20Database%20design/1.6.png)
 
 
 

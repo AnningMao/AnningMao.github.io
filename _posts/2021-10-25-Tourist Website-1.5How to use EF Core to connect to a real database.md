@@ -10,13 +10,13 @@ author: Anning Mao
 
    Project->Manage Nuget packages->Search `entityfamework core`
 
-   ![1.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/5.How%20to%20use%20Entity%20Framework/1.1.png)
+   ![1.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.5%20How%20to%20use%20Entity%20Framework/1.1.png)
 
    
 
 2. In order to configure the related functions of EF Core and access the database, we need to create a Database folder to store the AddDbContext file. This AddDbContext is a database mapping tool, which can ensure the data flow between the database and our code. In layman's terms, it is a connector.
 
-   ![2.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/5.How%20to%20use%20Entity%20Framework/2.1.png)
+   ![2.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.5%20How%20to%20use%20Entity%20Framework/2.1.png)
 
    
 
@@ -32,7 +32,7 @@ author: Anning Mao
 
    - In the context object, we need to specify which models need to be mapped to the database. In EF Core, we use DbSet to map models. Each data model must use a DbSet to map a database table.
 
-   ![3.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/5.How%20to%20use%20Entity%20Framework/3.1.png)
+   ![3.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.5%20How%20to%20use%20Entity%20Framework/3.1.png)
 
    
 
@@ -40,7 +40,7 @@ author: Anning Mao
 
    Before using DbContext, you need to configure it. The configuration is done in the parameter (option) of AddDbContext, so use the lambda expression call to configure the option
 
-   ![4.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/5.How%20to%20use%20Entity%20Framework/4.1.png)
+   ![4.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.5%20How%20to%20use%20Entity%20Framework/4.1.png)
 
    
 
@@ -48,7 +48,7 @@ author: Anning Mao
 
    ​	Project->Manage Nuget packages->Search `entityframeworkcore.sqlserver`
 
-   ![4.3](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/5.How%20to%20use%20Entity%20Framework/4.3.png)
+   ![4.3](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.5%20How%20to%20use%20Entity%20Framework/4.3.png)
 
    
 
@@ -68,7 +68,7 @@ author: Anning Mao
 
    For Visual studio built-in database, you can get the connection string from here
 
-   ![4.4](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/5.How%20to%20use%20Entity%20Framework/4.4.png)
+   ![4.4](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.5%20How%20to%20use%20Entity%20Framework/4.4.png)
 
    
 
@@ -76,11 +76,11 @@ author: Anning Mao
 
    - put connection in appsettings.json
 
-     ![5.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/5.How%20to%20use%20Entity%20Framework/5.1.png)
+     ![5.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.5%20How%20to%20use%20Entity%20Framework/5.1.png)
 
    - Add this line`using Microsoft.Extensions.Configuration;`in Startup.cs. 
 
-   - Create a private variable to store configuration information and  inject `configuration` into StartUp constructor.![5.2](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/5.How%20to%20use%20Entity%20Framework/5.2.png)
+   - Create a private variable to store configuration information and  inject `configuration` into StartUp constructor.![5.2](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.5%20How%20to%20use%20Entity%20Framework/5.2.png)
 
    then we can get the Connection String like following
 
@@ -96,7 +96,7 @@ Now that we have configured the connector, we can connect our repository to the 
 
 Create the TouristRouteRepository.cs in the Services folder
 
-![6.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/5.How%20to%20use%20Entity%20Framework/6.1.png)
+![6.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.5%20How%20to%20use%20Entity%20Framework/6.1.png)
 
 
 
@@ -138,6 +138,6 @@ namespace MyTourismSite.Services
 
 Finally, don't forget to update the dependency of Interface `ITouristRouteRepository`
 
-![6.2](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/5.How%20to%20use%20Entity%20Framework/6.2.png)
+![6.2](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.5%20How%20to%20use%20Entity%20Framework/6.2.png)
 
 Now you have connected to the real database through EF Core. But currently the database is empty. The next article will solve this problem.

@@ -31,7 +31,7 @@ Official definition: "Entity Framework is an object-relational mapper (O/RM) tha
 
 The composition of EF is briefly summarized as follows:
 
-![1.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/Entity%20Framework/1.1.png)
+![1.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.3%20Entity%20Framework/1.1.png)
 
 **1. EDM (Entity Data Model):** EDM consists of three main parts: conceptual model, mapping and storage model.
 

@@ -10,9 +10,9 @@ If you are using a Windows operating system, then your visual studio comes with 
 
 View->SQL Server Object Explorer
 
-![1.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/4.Deploy%20mssql%20On%20Docker/1.1.png)
+![1.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.4%20Deploy%20mssql%20On%20Docker/1.1.png)
 
-![1.2](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/4.Deploy%20mssql%20On%20Docker/1.2.png)
+![1.2](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.4%20Deploy%20mssql%20On%20Docker/1.2.png)
 
 This way is simple and easy to use, you can use it without any configuration
 
@@ -30,19 +30,19 @@ First you have to check your windows version. Because the virtualization service
 
 Open Hyper-v in windows function
 
-![3.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/4.Deploy%20mssql%20On%20Docker/3.1.png)
+![3.1](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.4%20Deploy%20mssql%20On%20Docker/3.1.png)
 
 
 
 Download Docker here https://www.docker.com/get-started
 
-![3.2](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/4.Deploy%20mssql%20On%20Docker/3.2.png)
+![3.2](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.4%20Deploy%20mssql%20On%20Docker/3.2.png)
 
 
 
 check it
 
-![3.3](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/4.Deploy%20mssql%20On%20Docker/3.3.png)
+![3.3](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.4%20Deploy%20mssql%20On%20Docker/3.3.png)
 
 
 
@@ -102,7 +102,7 @@ dism.exe /Online /Enable-Feature:Microsoft-Hyper-V /All
 
 SQL Server Object Explorer->add SQL Server
 
-![3.5](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/4.Deploy%20mssql%20On%20Docker/3.5.png)
+![3.5](https://github.com/AnningMao/MarkDownImage/raw/main/.net%20note/1.4%20Deploy%20mssql%20On%20Docker/3.5.png)
 
 Then you could connect to the mssql server on Docker.
 
